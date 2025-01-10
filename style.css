@@ -1,0 +1,179 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.myphoto {
+    width: 120px;
+    border-radius: 10px;
+}
+.photo {
+    text-align: center;
+}
+.name {
+    text-align: center;
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 28px;
+}
+.info {
+    text-align: center;
+    color: #00d9ff;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.button {
+  position: relative;
+  display: block;
+  border: 1px solid #000;
+  padding: 20px 100px;
+  text-align: center;
+  margin: 30px 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #00d9ff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 4px;
+      animation: glowFlash 1s infinite alternate;
+  }
+  
+  @keyframes glowFlash {
+      0% {
+          box-shadow: 0 0 3px #0ff;
+      }
+      100% {
+          box-shadow: 0 0 5px #0ff;
+      }
+      
+  
+  }
+.ig {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 50px;
+}
+.fb {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    width: 50px;
+}
+.top {
+    display: block;
+    /* 變區塊 */
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    /* 變圓形 */
+    background-color: #00d9ff;
+    text-align: center;
+    padding-top: 16px;
+    box-sizing: border-box;
+    /* 把padding、border的尺寸含入高度、寬度內 */
+}
+.works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.works{
+  width: 100%; /* 照片寬度 */
+    border: 5px solid transparent;
+    border-radius: 0px;
+    background: linear-gradient(45deg, #00d9ff);
+    padding: 0px;
+    box-shadow: 0 0 5px #00d9ff, 0 0 3px #00d9ff, 0 0 5px #00d9ff;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: 100px;
+}
+
+body {
+    background-color: #000000; 
+  }
+
+.name {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000; /* 文字顏色 */
+    filter: drop-shadow(1px 1px 0 #0ff) 
+            drop-shadow(-1px 1px 0 #0ff)
+            drop-shadow(1px -1px 0 #0ff)
+            drop-shadow(-1px -1px 0 #0ff);
+text-shadow: 
+    0 0 1px #0ff; /* 加強光暈效果 */
+animation: natural-flicker 2s infinite;
+}
+
+@keyframes natural-flicker {
+    0%, 100% { opacity: 1; }       /* 完全可見 */
+    10% { opacity: 0.7; }          /* 減弱 */
+    20% { opacity: 0.3; }          /* 幾乎消失 */
+    30% { opacity: 0.8; }          /* 再次亮起 */
+    40%, 80% { opacity: 1; }       /* 保持明亮 */
+    90% { opacity: 0.5; }          /* 突然變暗 */
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .marquee-content {
+    color: #00d9ff;
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  
+  .marquee-content2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee2 10s linear infinite;
+  }
+
+  .marquee-content3 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee2 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee3 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  
